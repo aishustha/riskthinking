@@ -1,6 +1,6 @@
 import { MapContainer, TileLayer } from 'react-leaflet';
 
-export default function Map() {
+const Map = () => {
     return (
       <MapContainer center={[52.505, -0.09]} zoom={13}>
         <TileLayer
@@ -9,4 +9,5 @@ export default function Map() {
         />
       </MapContainer>
     );
-  }
+  };
+  export default Map;

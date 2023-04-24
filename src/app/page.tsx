@@ -3,7 +3,7 @@ import Map from "../components/Map"
 export default function Home() {
   return (
     <div>
-      <h1>My Page</h1>
+      <h1>hello</h1>
       <Map />
     </div>
  

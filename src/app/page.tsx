@@ -1,12 +1,16 @@
-import dynamic from "next/dynamic";
+import React from "react";
+import { ReactNode } from "react";
 
-const DynamicMap = dynamic(() => import('../../components/Map'), {
-  ssr: false,
-});
+import Map from "./components/Map";
 
-
-export default function Home() {
-  return
-      <DynamicMap />;
+interface Props {
+  children: ReactNode;
 }
 
+export default function Home() {
+  return (
+    <>
+      <Map />
+    </>
+  );
+}
